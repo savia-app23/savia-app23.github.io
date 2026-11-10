@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savia · Privacidad y borrado de cuenta</title>
+<style>
+:root{--g:#1E5B4F;--cream:#FFF6EC;--sun:#F2A93B;--ink:#1F2A27;--muted:#4A5753;--line:#E6DCCF}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:19px;line-height:1.6;color:var(--ink);background:var(--cream)}
+header{background:var(--g);color:var(--cream);padding:28px 20px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;gap:16px;padding:0}
+header img{width:56px;height:56px;border-radius:14px}
+header h1{margin:0;font-size:28px} header p{margin:2px 0 0;color:var(--sun);font-weight:600}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
+nav a{flex:1 1 220px;text-align:center;padding:14px;border-radius:14px;border:2px solid var(--g);color:var(--g);font-weight:700;text-decoration:none;background:#fff}
+nav a.pri{background:var(--g);color:var(--cream)}
+h2{font-size:26px;margin:40px 0 10px;color:var(--g)} h3{font-size:21px;margin:26px 0 6px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:17px;background:#fff}
+th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:#F3EBDF}
+.box{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px 20px;margin:16px 0}
+.box.ok{border-color:var(--g)} .box h3{margin-top:0}
+ol li,ul li{margin:6px 0}
+.btn{display:inline-block;margin:6px 8px 6px 0;padding:14px 20px;border-radius:14px;background:var(--g);color:var(--cream);font-weight:700;text-decoration:none}
+.btn.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+mark{background:#FFE7A8;padding:0 3px;border-radius:4px}
+small,.muted{color:var(--muted)} footer{margin:48px 0 32px;font-size:16px;color:var(--muted)}
+blockquote{margin:12px 0;padding:12px 16px;border-left:5px solid var(--g);background:#fff;font-size:16px}
+a{color:var(--g)}
+</style></head><body>
+<header><div class="wrap"><img src="data:image/png;base64,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" alt=""><div><h1>Savia</h1><p>Vida, cultura y compañía</p></div></div></header>
+<main class="wrap">
+<nav><a class="pri" href="#borrar">Borrar mi cuenta</a><a href="#privacidad">Política de privacidad</a></nav>
+
+<section id="borrar" aria-labelledby="t-borrar">
+<h2 id="t-borrar">Borrar tu cuenta de Savia</h2>
+<p>Puedes borrar tu cuenta y tus datos cuando quieras. Es gratis y no tienes que dar explicaciones.</p>
+<div class="box ok"><h3>Opción 1: desde la app (lo más rápido)</h3>
+<ol><li>Abre Savia y toca <strong>Mi perfil</strong>.</li><li>Baja hasta <strong>Ajustes</strong> y toca <strong>Borrar mi cuenta</strong>.</li>
+<li>Marca «Entiendo que borrar la cuenta no se puede deshacer» y confirma.</li></ol></div>
+<div class="box"><h3>Opción 2: si ya no tienes la app</h3>
+<p>Escríbenos desde el correo de Google con el que entras a Savia, o indícanos tu nombre y ese correo. Responderemos en un máximo de 5 días hábiles.</p>
+<a class="btn" href="mailto:saviaconectandovidas@gmail.com?subject=Borrar%20mi%20cuenta%20de%20Savia">Pedir el borrado por correo</a>
+<a class="btn alt" href="https://wa.me/5491130439819?text=Hola%2C%20quiero%20borrar%20mi%20cuenta%20de%20Savia">Pedirlo por WhatsApp</a>
+<p class="muted"><small>Correo: saviaconectandovidas@gmail.com · WhatsApp: +54 9 11 3043-9819</small></p></div>
+<h3>Qué se borra</h3>
+<ul><li>Tu perfil, foto, barrio y gustos.</li><li>El enlace con tu cuenta de Google, tu correo y tu contacto de confianza.</li>
+<li>Los planes a los que te apuntaste, tus recordatorios, valoraciones y reconocimientos.</li>
+<li>Los planes que organizas se cancelan y avisamos a las personas apuntadas.</li></ul>
+<h3>Qué se guarda un tiempo, y por qué</h3>
+<table><tr><th>Dato</th><th>Cuánto tiempo</th></tr>
+<tr><td>Todo lo anterior</td><td>Se borra en un máximo de 30 días</td></tr>
+<tr><td>Mensajes en chats de planes</td><td>Se muestran como «Persona que ya no está en Savia» y se borran a los 12 meses del plan</td></tr>
+<tr><td>Reportes y suspensiones por estafa o abuso</td><td>2 años, para evitar que la misma persona vuelva a hacer daño</td></tr>
+<tr><td>Copias de seguridad</td><td>Se sobrescriben en 30 días</td></tr></table>
+<p>¿Solo quieres borrar algunos datos sin cerrar la cuenta? En la app puedes quitar tu foto, tu contacto de confianza o tus gustos desde <strong>Mi perfil</strong>, o pedírnoslo por correo.</p>
+</section>
+
+<section id="privacidad" aria-labelledby="t-priv">
+<h2 id="t-priv">Política de privacidad</h2>
+<p class="muted">Última actualización: 10 de noviembre de 2026</p>
+<h3>En pocas palabras</h3>
+<ul><li>Pedimos solo lo necesario para que conozcas gente y te encuentres en lugares públicos.</li>
+<li>Entras con tu cuenta de Google: Savia recibe solo tu nombre y tu correo, nunca tu contraseña.</li>
+<li><strong>Nunca vendemos tus datos</strong> y no mostramos publicidad.</li>
+<li>Los demás ven tu nombre, rango de edad, barrio, gustos y tu foto si la pones. <strong>Nunca tu correo, tu teléfono ni tu dirección.</strong></li>
+<li>Revisamos los mensajes en busca de señales de estafa para protegerte.</li>
+<li>Puedes ver, corregir o borrar tus datos cuando quieras.</li></ul>
+
+<h3>1. Quiénes somos</h3>
+<p>Savia es una app gratuita para que personas desde los 45 años compartan planes culturales y de amistad en lugares públicos. El responsable de tus datos es Linda Rodriguez, persona física, CUIL 27-95701302-9, con domicilio en Av. Avellaneda, Ciudad Autónoma de Buenos Aires, Argentina. Contacto de privacidad: saviaconectandovidas@gmail.com.</p>
+
+<h3>2. Qué datos recogemos</h3>
+<table><tr><th>Dato</th><th>Cuándo</th><th>¿Obligatorio?</th></tr>
+<tr><td>Nombre y correo de tu cuenta de Google</td><td>Al entrar con Google, para crear tu cuenta y que puedas recuperarla si cambias de celular</td><td>Sí</td></tr>
+<tr><td>Código de invitación</td><td>Al crear la cuenta, mientras Savia está en prueba</td><td>Sí</td></tr>
+<tr><td>Nombre, rango de edad y barrio</td><td>Al crear la cuenta</td><td>Sí</td></tr>
+<tr><td>Gustos e intereses</td><td>Al crear la cuenta o en tu perfil</td><td>No</td></tr>
+<tr><td>Cuánto te gusta caminar y necesidades de accesibilidad</td><td>En tu perfil, para mostrarte planes cómodos</td><td>No</td></tr>
+<tr><td>Foto de perfil</td><td>Si decides ponerla</td><td>No</td></tr>
+<tr><td>Planes, asistencia, valoraciones y a quién sigues</td><td>Al usar la app</td><td>Se generan al usarla</td></tr>
+<tr><td>Mensajes del chat y reacciones</td><td>Al usar el chat</td><td>Se generan al usarlo</td></tr>
+<tr><td>Reportes y bloqueos</td><td>Si reportas o bloqueas a alguien</td><td>No</td></tr>
+<tr><td>Contacto de confianza (nombre y teléfono)</td><td>Si decides añadirlo</td><td>No</td></tr>
+<tr><td>Propuestas de charla (profesionales)</td><td>Si ofreces una charla</td><td>Para proponerla</td></tr>
+<tr><td>Datos técnicos e identificador para avisos</td><td>Automáticamente</td><td>Sí</td></tr></table>
+<p>No usamos tu ubicación por GPS: las distancias se calculan con el barrio que eliges. No recibimos tu contraseña de Google ni accedemos a tus correos, contactos, micrófono ni archivos. No pedimos tu número de celular. Las necesidades de accesibilidad pueden considerarse datos de salud (datos sensibles): solo las guardamos si tú las indicas.</p>
+
+<h3>3. Para qué los usamos</h3>
+<p>Solo para hacer funcionar Savia y cuidar a la comunidad: crear y proteger tu cuenta, mostrarte planes cerca y a tu gusto, organizar los encuentros, enviarte recordatorios, cuidar la puntualidad, prevenir estafas y abusos, verificar a los profesionales y corregir errores. La base legal es tu consentimiento, que puedes retirar borrando la cuenta. No usamos tus datos para publicidad, no los vendemos y no creamos perfiles para terceros.</p>
+
+<h3>4. Quién ve qué</h3>
+<table><tr><th>Quién</th><th>Qué ve</th></tr>
+<tr><td>Cualquier persona de Savia</td><td>Nombre, rango de edad, barrio, intereses, foto e insignia de verificación</td></tr>
+<tr><td>Quienes están en el mismo plan</td><td>Además, los mensajes del chat de ese plan</td></tr>
+<tr><td>El anfitrión de un plan</td><td>Además, quién está apuntado y quién llegó</td></tr>
+<tr><td>El equipo de Savia</td><td>Lo necesario para soporte, revisar reportes y verificar profesionales</td></tr></table>
+
+<h3>5. Con quién los compartimos</h3>
+<p>Solo con proveedores técnicos que los tratan por encargo nuestro y bajo contrato, sin usarlos para fines propios:</p>
+<table><tr><th>Proveedor</th><th>Para qué</th><th>País de los servidores</th></tr>
+<tr><td>Supabase</td><td>Guardar la base de datos y las fotos</td><td>Brasil (São Paulo)</td></tr>
+<tr><td>Expo</td><td>Enviar los recordatorios al teléfono</td><td>Estados Unidos</td></tr>
+<tr><td>Google</td><td>Que puedas entrar con tu cuenta de Google (Google sabe que usas Savia, según su propia política)</td><td>Estados Unidos</td></tr></table>
+<p>Como esos servidores están fuera de Argentina, firmamos con cada proveedor las cláusulas de protección de datos que exige la ley argentina. Al tocar «Cómo llegar», «Añadir al calendario» o «WhatsApp» se abre otra app con su propia política. Podemos entregar datos si lo ordena un juez o ante un riesgo serio para la vida o la seguridad de alguien.</p>
+
+<h3>6. Seguridad</h3>
+<p>La conexión va cifrada y cada persona del equipo accede solo a lo necesario. Un sistema automático busca en los mensajes señales de estafa (pedidos de dinero, datos bancarios) y te avisa; una persona solo lee un mensaje si alguien lo reporta. Nunca compartas claves ni datos bancarios por el chat.</p>
+
+<h3>7. Cuánto tiempo los guardamos</h3>
+<p>Mientras tengas la cuenta. Al borrarla, ver <a href="#borrar">qué se borra y qué se guarda un tiempo</a>. Si no usas la app durante 24 meses, te avisaremos y luego borraremos la cuenta.</p>
+
+<h3>8. Tus derechos</h3>
+<p>Puedes pedir acceso, corrección, actualización o borrado de tus datos. En la app: <strong>Mi perfil → Descargar mis datos</strong> y <strong>Borrar mi cuenta</strong>. O escríbenos a saviaconectandovidas@gmail.com. Respondemos los pedidos de acceso en 10 días corridos y los de corrección o borrado en 5 días hábiles. Un familiar puede hacer el pedido por ti con tu autorización.</p>
+<blockquote>El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326. La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.</blockquote>
+
+<h3>9. Permisos del teléfono</h3>
+<p>Notificaciones (recordatorios), fotos o cámara (foto de perfil) y calendario (solo para añadir el plan que eliges). Cada permiso se pide cuando hace falta y puedes rechazarlo.</p>
+
+<h3>10. Edad mínima y cambios</h3>
+<p>Savia es para personas desde los 45 años. No es para menores de 18 y no recogemos datos de menores. Si cambiamos esta política de forma importante, te avisaremos en la app antes de que rija.</p>
+</section>
+<footer>Savia · Contacto: saviaconectandovidas@gmail.com</footer>
+</main></body></html>
